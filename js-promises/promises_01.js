@@ -2,16 +2,30 @@
 
 //There are 3 states when a promises runs.
 // 1. Pending
-// 2. Fullfilled = resolve
-// 3. Rejected = failed
+// 2. Fullfilled = resolve -> .then((data) => {})
+// 3. Rejected = failed -> .catch((error) => {})
 
 //เรียกใช้class ที่ JS สร้างไว้ให้แล้วเราเลยเรียกมันมาได้เลย
-new Promise((resolve, reject) => {
+const myPromise = new Promise((resolve, reject) => {
   const status = false;
 
-  if (status === true) {
+  if (status) {
     resolve("Operation ran successfully!");
   } else {
     reject("Something went wrong!");
   }
 });
+//แม่พิม output an object
+
+// console.log(myPromise);
+
+myPromise
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error(error);
+  })
+  .finally(() => {
+    console.log("Process finished.");
+  });
