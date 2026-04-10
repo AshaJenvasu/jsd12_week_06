@@ -1,0 +1,2 @@
+- still can't imagine the real siuation when using fetch and promises for the real websites.
+-
