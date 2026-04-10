@@ -1,2 +1,3 @@
 - still can't imagine the real siuation when using fetch and promises for the real websites.
--
+- complex logic and algorithm in JS still not fully understand yet.
+- still have problem with Ternary Operator when using in the real situation.
